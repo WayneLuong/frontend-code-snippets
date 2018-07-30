@@ -1,0 +1,55 @@
+<!-- Comments -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Code Snippets</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>JQuery</h1>
+
+    <h2>Selectors</h2>
+
+    <div id="idEl">Hello World</div>
+    <div class="classEl">Click Me</div>
+    <div id="timestamp"></div>
+    
+    <h2>GET SET data</h2>
+
+    <ul id="colors">
+        <li id="one">Blue</li>
+        <li id="two">White</li>
+        <li id="three">Red</li>
+    </ul>
+
+    <h2>Effects</h2>
+    
+    <div id="fade">.fadeToggle</div>
+    <button id="fadeBtn">Fade</button>
+
+    <div id="slide">.slideToggle</div>
+    <button id="slideBtn">Slide</button>
+
+    <div id="animate">.Animate()</div>
+    <button id="animateBtn">Animate</button>
+
+
+    <!-- Load jquery first then your main JS file -->
+    <!-- Local jquery -->
+    <script  src="jquery-3.3.1.min.js"></script>
+    <script>
+        /* if local jquery doesnt work use CDN */
+            window.jQuery || document.write('<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"><\/script>')
+    </script>
+    <!-- jQuery CDN -->
+    <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+
+    <!-- Main JS file -->
+    <script src="javascript.js"></script>
+
+    
+</body>
+</html>

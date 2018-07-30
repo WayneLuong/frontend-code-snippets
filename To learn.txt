@@ -1,0 +1,15 @@
+Frameworks and library
+HTML
+Bootstrap
+
+CSS
+Preprocessor --SASS
+ 
+JS
+NPM - package manager
+Jquery 
+JqueryUI 
+React - renderer
+Webpack - module bundler
+
+GITHUB --Version control

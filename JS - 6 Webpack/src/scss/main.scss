@@ -1,0 +1,21 @@
+@import '_partial';
+
+/*  --------- SASS commands-------------
+npm install sass -g (to run from any cmd)
+npm install sass -s (install to this project)
+sass ./scss/main.scss ./dist/css/main.css (watch this file)
+sass --watch scss:dist/css --style compressed  (watch this folder and minify)
+npm uninstall sass -s (uninstall and save)
+
+run the watch script easier
+
+package.json
+"scripts": {
+    "watch-sass": "sass --watch ./scss/main.scss ./dist/css/main.css --style compressed"
+
+    npm run watch-sass
+*/
+
+h1 {
+    color: rgb(134, 53, 53);
+}
