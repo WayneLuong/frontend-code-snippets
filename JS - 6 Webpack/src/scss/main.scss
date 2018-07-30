@@ -4,7 +4,7 @@
 npm install sass -g (to run from any cmd)
 npm install sass -s (install to this project)
 sass ./scss/main.scss ./dist/css/main.css (watch this file)
-sass --watch scss:dist/css --style compressed  (watch this folder and minify)
+sass --watch src/scss:dist/css --style compressed  (watch this folder and minify)
 npm uninstall sass -s (uninstall and save)
 
 run the watch script easier
