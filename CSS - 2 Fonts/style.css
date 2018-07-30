@@ -1,0 +1,38 @@
+/* Comments */
+
+/* --------------Fonts-------------- */
+h2 {
+    font-family: 'bluepink';
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    text-decoration: underline; /* this can be used to remove underlines from links etc */
+}
+
+span {
+    word-spacing: 1em;
+    letter-spacing: 1em;
+    text-align: center;
+    vertical-align: top;
+}
+
+a:link{
+    color: deeppink;
+}
+a:visited {
+    color: black;
+}
+a:hover{
+    color: green;
+}
+button:active {
+    background-color: black;
+}
+
+/* custom font downloaded and declared 
+formats: eot, woff, tff/otf, svg*/
+
+@font-face {
+    font-family: 'bluepink';
+    src: url('Fonts/Pink\ Blue.ttf')/* \back slash to ignore the space */
+}

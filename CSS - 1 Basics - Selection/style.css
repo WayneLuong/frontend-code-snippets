@@ -1,0 +1,65 @@
+/* Comments */
+
+/* ----------------Selectors--------------------
+
+* { } --universal selector select everything 
+h1, h2, h3 {} --type selector
+.example {} --ID selector
+#selector {} --Class selector
+li>a {} --child selector
+p a {} --descendant selector
+h1+p{} --matches adjacent sibling (first one)
+h1~p {} --matches more than one
+
+/* -----------size---------- */
+/* 
+   height: vh = viewport (100 slices)
+*/
+
+*/
+/* HTML element tags can be styled e.g. h1 button */
+body {
+    background-color: pink;
+}
+
+/* id given to element */
+#world {
+    color:red;
+    display: inline;
+    font-family: 'Trebuchet MS', 'Times New Roman';/* fallback fonts for browsers */
+}
+/* class given to element */
+.there {
+    color: #ffffff; /* Hex code for colors can be used */
+    display: inline;
+    font-size: 50px; /* can be px, 1ems or % */
+}
+
+/* block level element has their own lines e.g. div p h1-h6
+   inline level flows with the text e.g. img b i span
+*/
+
+
+
+/* -------------------Inheritance----------------- */
+
+/* borders with padding */
+#example {
+    border: solid;
+    padding: 10px;
+}
+
+/* .there class inherit #example padding attribute*/
+.there{
+    padding: inherit;
+}
+
+.there:nth-child(1) { /* selects the 1st child  */
+
+}
+
+/* -----------color--------------- */
+
+#world {
+    opacity: 0.5; 
+}

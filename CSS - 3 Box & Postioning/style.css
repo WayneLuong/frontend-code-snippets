@@ -1,0 +1,48 @@
+/* Comments */
+
+/* --------------Overflow ----------------- 
+
+prevents text from spilling over to next element*/
+#test{
+    max-height: 100px;
+    overflow: scroll
+    /* overflow: hidden; */
+
+}
+
+
+
+/* Border -- border around the content 
+Margin --- margin outside border
+ Padding -- betweeen border and the content 
+ 
+ inline
+ block
+ inline block - flow like inline while retaining all other features of block
+ 
+ visibility: hidden or visible
+ 
+ border-radius - for rounded border
+ */
+
+ /* --------------Position-------------- */
+
+ span{
+     position: fixed;
+ }
+
+ /* postion:
+ fixed: doesnt change no matter what
+ relative: flows line an inline 
+ static: normal default browser setting
+ absolute: element gets taken out of normal flow nothing affects it (like its not there)
+ 
+ z-index: decides which appears over the other e.g. 1 or 2
+ float: takes a element leftmost or rightmost (still normal flow)
+
+ NOTE: floated elements can sometimes be ignored in the box
+ Solution:
+ box property
+ overflow:auto
+ width:100%
+ */

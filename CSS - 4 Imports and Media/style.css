@@ -1,0 +1,13 @@
+/* Comments */
+
+/* CSS from import.css */
+@import url("/import.css");
+
+/* CSSS depends on the screen width */
+@media screen and (max-width:900px) and (min-width: 600px), (min-width:1100px){
+
+}
+
+@media screen and (orientation: landscape){
+
+}

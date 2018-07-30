@@ -1,0 +1,58 @@
+<!-- Comments -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Responsive design: viewport-->
+    <meta charset="utf-8>" name="viewport" content=width=device-width, intial-scale="1.0">
+    <title>Code Snippets</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>HTML Elements</h1>
+    <h2>Form</h2>
+    <form>
+        <label>Textbox</label>
+        <input type="text" id="exampledesc" placeholder="Description..">
+       
+        <label>Selector</label>
+        <select id="severity">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select>
+
+        <label>Multiple Selector</label>
+        <select id="severity" size="3" multiple>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+        </select>
+
+        <label>Text area</label>
+        <textarea name="message" rows="10" cols="30">Placeholder..
+        </textarea>
+
+        <!-- Runs the JS function on click-->
+        <label>Button</label>
+        <button type="button" onclick="showJSMess()">Click Me</button>
+    </form>
+
+    <h2>Media Controls</h2>
+    <h3>Local videos</h3>
+    <!--controls add the play buttons-->
+    <video width="320" height="240" controls>
+       <!-- Video from local <source src="media/video.mp4"> -->
+    </video>
+
+    <h3>Youtube videos</h3>
+    <!--controls=0 no controls controls=1 have controls-->
+    <iframe width="320" height="240" src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=1">
+        <!--  Loop playlist: src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">-->
+    </iframe>
+
+
+    <script src="javascript.js"></script>
+</body>
+</html>
