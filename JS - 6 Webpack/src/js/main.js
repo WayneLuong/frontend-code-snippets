@@ -1,8 +1,10 @@
 /* 
 npm install webpack -g (install globally for use with cmd)
 npm install webpack -s (install to this project)
-
+npm install webpack-cli -s
+ 
 create webpack config in root folder(webpack will auto use)
+
 
 cmd:
 webpack --watch (will watch and update any changes)

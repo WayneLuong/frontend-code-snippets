@@ -9,8 +9,8 @@ let greet2='Hello <a href="http://wayneluong.github.io/">Wayne</a>';
 var el = document.getElementsByClassName("greeting");
 var el2 = document.getElementById("2");
 //Preferred method UPDATED
-var el3 = document.querySelector("#2"); //selects first one
-var el4 = document.querySelectorAll(".greeting"); //selects all with this class name
+/* var el3 = document.querySelector("#2"); //selects first one
+var el4 = document.querySelectorAll(".greeting"); */ //selects all with this class name
 
 //Hide .hidden
 //el2.hidden= true;
@@ -83,7 +83,7 @@ elName.textContent = hotel.name;
 elRoomTypes.textContent= "Room Types: " + hotel.roomTypes;
 elAvailability.textContent = "Rooms available: " + hotel.checkAvailability();
 
-//------------Creating new instances of objects-----------------
+//------------ OLD Creating new instances of objects-----------------
 //Object Constructor - multiple instances of objects
 
 function Book (name, author,type, year){
@@ -108,6 +108,55 @@ function Book (name, author,type, year){
 
     //Shows the array[index number] in the object
     console.log(book2.type[1]);
+
+/* UPDATED ES6 creating new instances of objects */
+/* ----------------------Classes--------------- */
+
+class User {
+    /* class attributes */
+    constructor(name, email) {
+        this.name = name;
+        this.email = email;   
+    }
+    /* class methods */
+    publish() {
+        console.log('working');
+        return this; //in order to method chain you must return this method;
+    }
+    write() {
+        console.log('written');
+        return this;
+    }
+}
+
+var userOne = new User('wayne', 'example@example.com');
+var userTwo = new User('ben', 'example@example.com');
+
+userOne.publish();
+
+/* Method chaining - use mulitple method in one line */
+
+userTwo.publish().write();
+
+/* ----------------------Class Inheritence --------------- */
+
+//inherits all he user attributes and methods as well as its own e.g. admin tools
+class Admin extends User{
+    deleteUser(user){
+        // => is function(u){} new ES6 code
+        users = users.filter(u => {
+            return u.email != user.email;
+        })
+    }
+}
+
+var admin = new Admin('bob', 'example@example.com');
+var users = [userOne, userTwo];
+
+admin.deleteUser(userTwo);
+//wont retuen userTwo as it is false !=
+
+console.log(users)
 
     //------Common built-in objects ---
 

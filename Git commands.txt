@@ -4,22 +4,27 @@ cd.. - go back
 dir - see the files
 . - selects all
 
+git init - new repo
 git clone - clone repo
-git ls-files - views the files
-git pull - pull the latest changes to current branch
-git status - shows the status
-git add - add file
+git add <filename> - add file
 git all . add all files
 git commit -m"message" - commit changes and message
-git push -  push changes to master
 git commit -a -m"message" -  adds everything
-git log - shows the commit history
-git checkout master- switches branches or master
-git checkout -b new-ideas - creates new branch new-ideas
-git branch - shows the branches
-git push --set-upstream origin new-ideas - pushes a new branch to repo
-git branch -d - delete the branch name
+git push -  push changes to master
+git pull - pull the latest changes to current branch
+git merge <branchname>
 
+git remote add origin <other repo>
+git push --all origin
+git checkout master- switches branches or master
+git checkout -b <branchname> - creates new branch 
+git push --set-upstream origin new-ideas - pushes a new branch to repo
+
+git ls-files - views the files
+git status - shows the status
+git log - shows the commit history
+git branch - shows the branches
+git branch -d - delete the branch name
 confirm pull request and allow merge to master on github
 
 change git acc

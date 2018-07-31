@@ -4,7 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
     "watch-sass": "sass --watch ./src/scss/main.scss ./dist/css/main.min.css --style compressed",
     "build-dev": "webpack src/js/main.js ./dist/bundle.js -d --watch",
     "build-prod": "webpack ./src/js/main.js ./dist/bundle.js -p"
@@ -14,7 +14,8 @@
   "dependencies": {
     "jquery": "^3.3.1",
     "sass": "^1.10.1",
-    "webpack": "^4.16.3"
+    "webpack": "^4.16.3",
+    "webpack-cli": "^3.1.0"
   },
   "devDependencies": {}
 }
