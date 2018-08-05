@@ -1,0 +1,79 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+#box {
+    background-color: #fff;
+    margin: auto;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    /* property must be declared to target it for transitions */
+    transition-property: background, border-radius;
+    transition-duration: 3s;
+    transition-delay: 1s;
+    transition-timing-function: linear;
+}
+
+#box:hover{
+    background-color: red;
+    border-radius: 50%;
+}
+
+#btn {
+    animation: btn 3s ease-out 1s 2 alternate forwards;
+    /* targets the transform animation */
+    transition-property: transform;
+    transition-duration: 1s;
+}
+#btn:hover {
+    transform: rotateY(180deg);
+} 
+
+#line {
+    background-color: white;
+    width: 50px;
+    height: 10px;
+    margin: 5px;
+}
+
+.closebtn {
+    background-color: red;
+    visibility: hidden;
+}
+
+/* 
+TRANSITIONAL PROPERTIES
+-Properties that have an identifiable halfway point
+
+background-color 
+background-position 
+border-color 
+border-width 
+border-spacing 
+bottom 
+color
+font-size 
+font-weight 
+height left 
+letter-spacing 
+line-height 
+margin 
+max-height 
+max-width 
+min-height 
+min-width 
+opacity 
+outline-color 
+outline-offset 
+outline-width 
+padding right 
+text-indent 
+text-shadow 
+top 
+vertical-align 
+visibility 
+width 
+word-spacing 
+z-index */

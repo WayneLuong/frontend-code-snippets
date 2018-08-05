@@ -8,4 +8,5 @@ class App extends Component {
     }
 }
 
+/* must export  */
 export default App;

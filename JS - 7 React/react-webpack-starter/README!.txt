@@ -5,6 +5,15 @@ npm i --save-dev webpack webpack-dev-server webpack-cli
 BABEL
 npm i --save-dev babel-core babel-loader babel-preset-env babel-preset-react html-webpack-plugin
 
+CONFIGS 
+.babelrc
+{
+    "presets": [
+        "env", "react"
+    ]
+}
+
+
 SCRIPTS
 open- auto openbrowser hot -auto reload
 --production create and minify in dist folder for production
