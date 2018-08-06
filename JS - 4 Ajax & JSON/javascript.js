@@ -17,7 +17,11 @@ newRequest.onload = function(){
     console.log(newRequest.responseText);
 };
 newRequest.send(); */
-
+/* 
+Turns arrays, strings, objects into JSON valid data
+JSON.stringify();
+Turns JSON data into objects/arrays
+JSON.parse(); */
 //-----------------------Getting Data & error handling------------------------------
 var newRequest = new XMLHttpRequest(); //Open a request
 newRequest.open('GET', 'http://www.json-generator.com/api/json/get/ceeRZxNWzS?indent=2')
@@ -28,7 +32,7 @@ newRequest.onload = function(){ //Onload do this
     if (newRequest.status >= 200 && newRequest.status <400) {
         //console.log(newRequest.responseText); //Show the data
 
-        var ourData = JSON.parse(newRequest.responseText); //JSON data must be parsed to let the broswer know it is a JSON object
+        var ourData = JSON.parse(newRequest.responseText); //JSON data must be parsed to let the browser know it is a JSON object
 
          //log the object
          console.log(ourData[0]);
@@ -81,3 +85,43 @@ function renderHTML(data){
     //Insert additional HTML each time
     text.insertAdjacentHTML('beforeend', htmlString);
 }
+
+/* -------------- Manipulating JSON data ----------- */
+
+/* object */
+var person = {
+    name: 'Wayne',
+    age: 24,
+    address: {
+        street: '5 main street',
+        city: 'London'
+    },
+    children: ['Jake', 'Lucy']
+}
+
+console.log('Local Object:' + person.name);
+console.log('Local Object:' + person.address.street);
+console.log('Local Object:' + person.children[0]);
+
+/* JSON */
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+       
+        /* log the json data attributes */
+        var response = JSON.parse(xhttp.responseText);
+        var people = response.person;
+        console.log('JSON Attribute:' + people[0].name);
+
+        /* iterate through array in json */
+      for (var i = 0; i < people[0].children.length;i++){
+          console.log('JSON Array:' + people[0].children[i]);
+      }
+
+      /* log the object in json */
+      console.log('JSON Object:' + people[0].address.street);
+    }
+};
+xhttp.open("GET", "people.json", true);
+xhttp.send();
