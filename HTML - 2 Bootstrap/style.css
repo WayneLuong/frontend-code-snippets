@@ -1,1 +1,71 @@
 /* Comments */
+
+.container {
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+.container-fluid {
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+.row {
+    background-color: red;
+}
+
+/* ---------Media queries are availabe using SASS mixins since they are written in SASS -------- */
+/* // Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+@include media-breakpoint-up(sm) { ... }
+@include media-breakpoint-up(md) { ... }
+@include media-breakpoint-up(lg) { ... }
+@include media-breakpoint-up(xl) { ... }
+
+// Example: Hide starting at `min-width: 0`, and then show at the `sm` breakpoint
+.custom-class {
+  display: none;
+}
+@include media-breakpoint-up(sm) {
+  .custom-class {
+    display: block;
+  }
+} */
+
+/* 
+---------------Components/widgets------------------
+Alerts
+Badge
+Breadcrumb
+Buttons
+Button group
+Card
+Carousel
+Collapse
+Dropdowns
+Forms
+Input group
+Jumbotron
+List group
+Modal
+Navs
+Navbar
+Pagination
+Popovers
+Progress
+Scrollspy
+Tooltips */
