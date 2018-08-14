@@ -9,7 +9,7 @@ body {
     width:200px;
     animation-name: myanimation;
     animation-duration: 4s;
-    animation-iteration-count: 1;
+    animation-iteration-count: 1;/* how often it repeats */
     animation-delay: 1s;
     animation-direction: alternate-reverse;
     animation-timing-function: ease-in;
