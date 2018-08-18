@@ -32,3 +32,4 @@ npm install --save url-loader  # loads small assets as dataURIs# large assets ge
 npm run start or npm start
  "start": "webpack-dev-server --inline --hot",
 "sass-build": "sass ./src:./build --style compressed "
+"webpack-build": "webpack" (minify bundle js)
