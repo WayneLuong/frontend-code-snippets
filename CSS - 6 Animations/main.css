@@ -18,6 +18,7 @@ body {
 
 /* -------------------KEYFRAMES--------------- */
 /* at % loading (4s) */
+    /* from to // percentages */
 @keyframes myanimation {
     0% {background-color: #fff; left:0px; top:0px;}
     25% {background-color: red; left:300px; top:0px; border-radius: 25% 50%;}

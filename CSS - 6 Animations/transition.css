@@ -43,6 +43,35 @@ body {
     visibility: hidden;
 }
 
+
+/* -----------Transition--------------- */
+    /* [property] [duration] [ease] [delay]*/
+    /* transition: font-size 2s ease-in 1s; */
+
+
+    /* from to // percentages */
+    @keyframes fromRight {
+        from {
+            margin-left: 100%;
+            width: 300%; 
+          }
+        
+          to {
+            margin-left: 0%;
+            width: 100%;
+          }
+    }
+
+    /* transform with transition */
+h2 {
+    transform: rotate(360deg) translateY(20px);
+    transition: 3s;
+}
+
+p {
+    animation: fromRight 1s;
+}
+
 /* 
 TRANSITIONAL PROPERTIES
 -Properties that have an identifiable halfway point

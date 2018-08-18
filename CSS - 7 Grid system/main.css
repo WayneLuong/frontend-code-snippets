@@ -1,0 +1,85 @@
+/* every odd element has different background */
+
+#wrapper>p {
+    background-color: #eee;
+    padding: 1em;
+}
+
+#wrapper>p:nth-child(odd) {
+    background-color: #ddd;
+}
+
+#grid>p {
+    background-color: #eee;
+    padding: 1em;
+}
+
+#grid>p:nth-child(odd) {
+    background-color: #ddd;
+}
+#nested {
+    background-color: #eee;
+    padding: 1em;
+}
+/* -----------GRID---------- */
+
+#wrapper {
+    display: grid;
+    /* can be percent or fractionals etc */
+    /*     grid-template-columns: 70% 30%;
+ */
+    grid-template-columns: 40% 30% 30%;
+    /* grid-auto-rows: 100px;  adjustable height rows*/
+    grid-auto-rows: minmax(100px, auto);
+    /* Gap */
+    /*  grid-column-gap: 5px;
+    grid-row-gap: 5px; */
+    grid-gap: 5px;
+    /* ----align content---- */
+    justify-items: end; /* X start center end stretch */
+    align-items: center;/* Y start center end stretch */
+    /* align-self: end;  just one item*/
+}
+/* recommended syntax */
+#grid {
+    display: grid;
+/*    grid-template-columns: 1f 1fr 1fr;*/
+   grid-template-columns: repeat(3, 1fr);
+
+}
+
+#nested {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 70px;
+}
+#nested > p {
+    border: solid #000 1px;
+}
+
+/* -----------GRID 2D---------- */
+/* move 1 to 3 = 1/3  Can overlap if values overlap*/
+#wrapper2{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 1em;
+}
+#wrapper2>div {
+    background-color: #eee;
+    padding: 1em;
+}
+#wrapper2>div:nth-child(odd) {
+    background-color: #ddd;
+}
+
+#box1 {
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+#box2 {
+    grid-row: 1/3;
+}
+#box3 {
+    grid-column: 2/4;
+}
