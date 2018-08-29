@@ -13,6 +13,9 @@ class App extends Component {
             title: 'Welcome',
         };
     }
+    check(){
+        console.log('Function Working')
+    }
     changeTitle(title){
         this.setState({title});
     }
@@ -24,7 +27,7 @@ class App extends Component {
             <h1>Events and data changes</h1>
             {/* IMPORTANT: must bind this so it doesnt take in parameters from Header class from App instead
             Sends changeTitle method to Header.js*/}
-            <Header changeTitle={this.changeTitle.bind(this)} title={this.state.title}/>
+            <Header check={this.check.bind(this)} changeTitle={this.changeTitle.bind(this)} title={this.state.title}/>
             <Footer/>
         </div>
         )}

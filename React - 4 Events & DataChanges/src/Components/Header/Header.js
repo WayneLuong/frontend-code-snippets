@@ -7,8 +7,10 @@ export default class Header extends Component {
         const title = e.target.value;
         this.props.changeTitle(title);
     }
-
+  
     render() {
+        //working passed function
+        this.props.test();
         return (
         <div>
             <h1 >Header class</h1>

@@ -16,6 +16,7 @@ prevents text from spilling over to next element*/
 Margin --- margin outside border
  Padding -- betweeen border and the content 
  
+ Display:
  inline
  block
  inline block - flow like inline while retaining all other features of block
@@ -31,7 +32,11 @@ Margin --- margin outside border
      position: fixed;
  }
 
- /* postion:
+ /* Display:
+ inline
+ block
+ inline block  */
+ /* position:
  fixed: doesnt change no matter what
  relative: flows line an inline 
  static: normal default browser setting
@@ -46,3 +51,26 @@ Margin --- margin outside border
  overflow:auto
  width:100%
  */
+
+ /* -------------------------------RESPONSIVE ---------------------------------------------- */
+
+ /* responsive positioning */
+/* div{
+    transform: translate(30vw,30vh); //vioew width and view height
+    background: url();
+    background-size: 100% 100% or 100vw 100vh;
+} */
+
+/* 
+static cannot
+position: relative can be affected by top bottom right left properties
+fixed is affected and isnt affected by scrolling
+absolute is absolute to its nearest element e.g. dropdown to nav.
+sticky scroll with the viewport until a condition is met then it is fixed e.g. top:0 ie. at the top
+*/
+
+/* positioning
+    padding/margin
+    transform:translate
+    top, bottom,left,right (not static)
+*/
