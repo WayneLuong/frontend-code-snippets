@@ -63,6 +63,9 @@ body {
     }
 
     /* transform with transition */
+    h1 {
+        animation: fromRight 2s;
+    }
 h2 {
     transform: rotate(360deg) translateY(20px);
     transition: 3s;

@@ -7,9 +7,10 @@ body {
     background-color: #fff;
     height: 200px;
     width:200px;
+    animation: myanimation 2s;
     animation-name: myanimation;
     animation-duration: 4s;
-    animation-iteration-count: 1;/* how often it repeats */
+    animation-iteration-count: infinite;/* how often it repeats */
     animation-delay: 1s;
     animation-direction: alternate-reverse;
     animation-timing-function: ease-in;

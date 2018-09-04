@@ -1,0 +1,51 @@
+section {
+    height: 50vh;
+    background-color: aqua;
+    /* aligning */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+ /*  visibility: hidden; */
+}
+section:nth-child(odd) {
+    background-color: red;
+}
+
+section:nth-child(odd) h1 {
+    /* animation: fromRight 2s; */
+}
+section:nth-child(even) h1 {
+  /*   animation: fromLeft 2s; */
+}
+/* Animation */
+
+.fromRight {
+    animation: fromRight 2s;
+    /* visibility: visible; */
+}
+
+
+
+@keyframes fromRight {
+    from {
+        transform: translateX(500px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fromLeft {
+    0%{
+        transform: translateX(-500px);
+    }
+    50%{
+
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
