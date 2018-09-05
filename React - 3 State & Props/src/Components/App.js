@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import './App.scss';
 import Header from './Header/Header'; 
+import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
 
 /* State good for one time changes 
@@ -26,8 +27,14 @@ class App extends Component {
         <div>
             <h1>State and Props</h1>
             <p>State value: {this.state.name}. Each header has passed a different value</p>
-            <Header title={title} name={"passedprops"}/>
+            <Header title={title} branding="Branding" name={"passedprops"}/>
             <Header title={'Changed Title 2'} name={"passedprops"}/>
+            
+            <Contact 
+            name="JohnDoe" 
+            email="jdoe@gmail.com"
+            phone="555-555-5555"/>
+            
             <Footer/>
         </div>
         )}

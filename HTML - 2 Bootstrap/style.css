@@ -14,6 +14,21 @@
     background-color: red;
 }
 
+/* Bootstrap -classes */
+/* 
+--Margin---
+ml, mt, mb, mr-auto = margin-right:auto;
+--Padding--
+pt, pl, pr, pb, px, py-0 = padding-y = 0;
+--Colors--- e.g. navbar-dark: 
+danger, primary, secondary, warning, info, light, dark
+
+text-center text-left
+align-middle (vertical)
+border-top-0 border border-danger
+*/
+
+
 /* ---------Media queries are availabe using SASS mixins since they are written in SASS -------- */
 /* // Extra small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
