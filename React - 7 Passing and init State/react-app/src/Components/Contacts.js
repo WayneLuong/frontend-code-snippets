@@ -33,7 +33,8 @@ class Contacts extends Component {
           /* initialise the constructor */
       const {contacts} = this.state;
     /* Map through each contact object in the array maps to contact card component */
-    /* Return each contacts to contact component for templating */
+    /* Return each contacts to Contact component for templating */
+    /*App-->Contacts-->Contact*/
     return (
       <div>
         {contacts.map (contact => (
