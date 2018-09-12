@@ -31,3 +31,6 @@ change git acc
 git config --global credential.helper wincred
 go on windows creditials manager delete key
 then relogin
+
+.gitignore file (ignore any folders in it e.g. node_modules)
+gh-pages deploy

@@ -86,3 +86,5 @@ npm install live-server --save-dev
 
 //npm run dev 
 Must use 'run' unless the script name is 'start' or 'test'
+
+create-react-app . (install current folder)
