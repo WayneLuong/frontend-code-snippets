@@ -50,7 +50,7 @@ body {
 }
 
 /* .there class inherit #example padding attribute*/
-.there{
+.there, #example{
     padding: inherit;
 }
 
