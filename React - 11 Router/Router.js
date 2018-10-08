@@ -35,7 +35,7 @@ const { id, name, email, phone } = this.props.users;
         </li>
       </ul>
       
-//-----------Navbar.JS-------------------
+//----------Setting and getting params-------------------
     const {id} = this.props.match.params
 -------------------------------------------
 /* pass props to get params.id */
