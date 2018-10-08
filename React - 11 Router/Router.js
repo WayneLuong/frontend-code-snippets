@@ -20,6 +20,8 @@ import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 
 import { Link } from "react-router-dom";
 
+const { id, name, email, phone } = this.props.users;
+
      <ul>
         <li>
           <Link to="/">Home</Link>
