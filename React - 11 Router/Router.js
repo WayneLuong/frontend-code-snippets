@@ -37,5 +37,12 @@ const { id, name, email, phone } = this.props.users;
       
 //-----------Navbar.JS-------------------
     const {id} = this.props.match.params
-
-
+-------------------------------------------
+/* pass props to get params.id */
+export default (props) => {
+  return (
+    <div>
+        <h1>{props.match.params.id}</h1>
+    </div>
+  )
+}
