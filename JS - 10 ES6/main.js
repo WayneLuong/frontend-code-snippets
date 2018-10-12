@@ -1,4 +1,4 @@
-// CONST & LET
+// ------------------------CONST & LET-----------------------
 let name = 'John';
 let test;
 
@@ -14,7 +14,7 @@ person.name = 'Jack';
 const nums = [1, 2, 3, 4];
 nums.push(5);
 
-// ARROW FUNCTIONS
+// ----------------ARROW FUNCTIONS-----------------------
 
 function sayHello() {
   console.log('Hello');
@@ -24,13 +24,13 @@ const sayHello = name => console.log(`Hello ${name}`);
 
 const fruits = ['Apples', 'Oranges', 'Grapes'];
 
-// FOREACH
+//---------------------------- FOREACH--------------------------------
 fruits.forEach((fruit, index) => console.log(fruit));
 
 // MAP
 const singleFruit = fruits.map(fruit => fruit.slice(0, -1).toUpperCase());
 
-// FILTER
+//-- FILTER--
 const people = [
   { id: 1, name: 'Karen' },
   { id: 2, name: 'Bob' },
@@ -39,7 +39,7 @@ const people = [
 
 const people2 = people.filter(person => person.id !== 2);
 
-// SPREAD
+// -------------------SPREAD------------------------
 
 const arr = [1, 2, 3];
 const arr2 = [...arr, 4];
@@ -55,7 +55,7 @@ const person2 = {
   email: 'brad@gmail.com'
 };
 
-// DESTRUCTURING
+// -----------------DESTRUCTURING----------------------------
 
 const profile = {
   name: 'John Doe',
@@ -69,7 +69,7 @@ const profile = {
 const { name, address, hobbies } = profile;
 const { street, city } = profile.address;
 
-// CLASSES
+// --------------------CLASSES----------------------------
 class Person {
   constructor(name, age) {
     this.name = name;
@@ -84,7 +84,7 @@ class Person {
 const person1 = new Person('John', 33);
 const person2 = new Person('Sara', 28);
 
-// SUBCLASSES;
+// ---SUBCLASSES;---
 class Customer extends Person {
   constructor(name, age, balance) {
     super(name, age);
@@ -98,7 +98,7 @@ class Customer extends Person {
 
 const customer1 = new Customer('Kevin', 32, 300);
 
-// MODULES
+// ----MODULES----
 
 // file 1 (file1.js)
 export const name = 'Jeff';
@@ -108,3 +108,15 @@ export default Person;
 // // file 2 (file2.js)
 import { name, nums } from './file1';
 import Person from './file1';
+
+//--------------------------PUSH // CONCAT-------------------------
+var arr1 = [‘a’, ‘b’, ‘c’];
+var arr2 = [‘d’, ‘e’, ‘f’];
+var arr3 = arr1.push(arr2);
+console.log(arr3); // 4
+console.log(arr1); // [“a”, “b”, “c”, [“d”, “e”, “f”]]
+
+var arr1 = [‘a’, ‘b’, ‘c’];
+var arr2 = [‘d’, ‘e’, ‘f’];
+var arr3 = arr1.concat(arr2);
+console.log(arr3); //[“a”, “b”, “c”, “d”, “e”, “f”]
