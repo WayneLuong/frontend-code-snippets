@@ -1,17 +1,26 @@
 import React, { Component } from 'react';
 import TextInputGroup from '../layout/TextInputGroup';
+import {connect} from 'react-redux'
 import PropTypes from 'prop-types'
-import {connect} from 'react-redux';
-import {addContact} from '../../actions/contactActions'
-import uuid from 'uuid'
+import {getContact, updateContact} from '../../actions/contactActions'
 
-class AddContact extends Component {
+class EditContact extends Component {
   state = {
     name: '',
     email: '',
     phone: '',
     errors: {}
   };
+
+  componentWillReceiveProps(nextProps, nextState){
+    const {name,email,phone} = nextProps.contact;
+    this.setState({name,email,phone});
+  }
+
+componentDidMount(){
+  const {id} = this.props.match.params
+  this.props.getContact(id);
+}
 
   onSubmit = (e) => {
     e.preventDefault();
@@ -34,15 +43,18 @@ class AddContact extends Component {
       return;
     }
 
-    const newContact = {
-      id: uuid(),
+    const { id } = this.props.match.params;
+
+    const updContact = {
+      id,
       name,
       email,
       phone
     };
 
-    //// SUBMIT CONTACT ////
-    this.props.addContact(newContact);
+
+    //// UPDATE CONTACT ////
+    this.props.updateContact(updContact);
 
     // Clear State
     this.setState({
@@ -62,7 +74,7 @@ class AddContact extends Component {
 
     return (
       <div className="card mb-3">
-        <div className="card-header">Add Contact</div>
+        <div className="card-header">Edit Contact</div>
         <div className="card-body">
           <form onSubmit={this.onSubmit}>
             <TextInputGroup
@@ -92,7 +104,7 @@ class AddContact extends Component {
             />
             <input
               type="submit"
-              value="Add Contact"
+              value="Update Contact"
               className="btn btn-light btn-block"
             />
           </form>
@@ -102,8 +114,13 @@ class AddContact extends Component {
   }
 }
 
-AddContact.propTypes = {
-  addContact: PropTypes.func.isRequired
+EditContact.propTypes = {
+  contact: PropTypes.object.isRequired,
+  getContact: PropTypes.func.isRequired
 }
 
-export default connect(null, {addContact})(AddContact);
+const mapStateToProps = state => ({
+  contact: state.contact.contact
+})
+
+export default connect(mapStateToProps, {getContact, updateContact}) (EditContact);

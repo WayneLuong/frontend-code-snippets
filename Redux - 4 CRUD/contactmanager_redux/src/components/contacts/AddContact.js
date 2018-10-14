@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import TextInputGroup from '../layout/TextInputGroup';
+import PropTypes from 'prop-types'
+import {connect} from 'react-redux';
+import {addContact} from '../../actions/contactActions'
 
-class EditContact extends Component {
+class AddContact extends Component {
   state = {
     name: '',
     email: '',
@@ -30,15 +33,14 @@ class EditContact extends Component {
       return;
     }
 
-    const updContact = {
+    const newContact = {
       name,
       email,
       phone
     };
 
-    const { id } = this.props.match.params;
-
-    //// UPDATE CONTACT ////
+    //// SUBMIT CONTACT ////
+    this.props.addContact(newContact);
 
     // Clear State
     this.setState({
@@ -58,7 +60,7 @@ class EditContact extends Component {
 
     return (
       <div className="card mb-3">
-        <div className="card-header">Edit Contact</div>
+        <div className="card-header">Add Contact</div>
         <div className="card-body">
           <form onSubmit={this.onSubmit}>
             <TextInputGroup
@@ -88,7 +90,7 @@ class EditContact extends Component {
             />
             <input
               type="submit"
-              value="Update Contact"
+              value="Add Contact"
               className="btn btn-light btn-block"
             />
           </form>
@@ -98,4 +100,8 @@ class EditContact extends Component {
   }
 }
 
-export default EditContact;
+AddContact.propTypes = {
+  addContact: PropTypes.func.isRequired
+}
+
+export default connect(null, {addContact})(AddContact);
