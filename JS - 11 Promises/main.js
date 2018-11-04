@@ -53,3 +53,17 @@ async function init(){
 }
 
 init();
+
+/* -----------ASYNC//AWAIT/FETCH----------- */
+
+//FETCH API to get http requests
+
+async function fetchUsers(){
+  const res= await fetch('https://jsonplaceholder.typicode.com/todos');
+  //fetch -- first promise calls res.json
+  const data =  await res.json();
+
+  console.log(data);
+}
+
+fetchUsers();
