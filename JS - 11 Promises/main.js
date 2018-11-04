@@ -44,3 +44,12 @@ getData('GET', 'https://jsonplaceholder.typicode.com/todos')
     console.log(err)
 });
 
+
+/* -----------ASYNC//AWAIT----------- */
+async function init(){
+  await createPost({title: 'title', body: 'content'})
+  //wait for create post then fires gets post
+  getPost();
+}
+
+init();
