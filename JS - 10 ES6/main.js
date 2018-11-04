@@ -121,6 +121,10 @@ var arr2 = [‘d’, ‘e’, ‘f’];
 var arr3 = arr1.concat(arr2);
 console.log(arr3); //[“a”, “b”, “c”, “d”, “e”, “f”]
 
+//-------------------FIND----------------------
+pet = pets.find(pet => pet.type ==='Dog' && pet.name === 'Tommy');
+console.log(pet); // { type: 'Dog', name: 'Tommy' }
+
 //--------------------------IF ELSE -------------------------
 
 var id = 1
@@ -131,6 +135,22 @@ let visible = true;
 
 visible ? (console.log('visible is true')): null
 
-//-------------------FIND----------------------
-pet = pets.find(pet => pet.type ==='Dog' && pet.name === 'Tommy');
-console.log(pet); // { type: 'Dog', name: 'Tommy' }
+//-----------------------FOR//OF------------
+for(i=0; i>data.length; i++){
+  //Do something
+}
+
+for(let i of data.length) {
+  //Do something
+}
+
+let iterable = [10, 20, 30];
+
+for (let value of iterable) {
+  value += 1;
+  console.log(value);
+}
+// 11
+// 21
+// 31
+
