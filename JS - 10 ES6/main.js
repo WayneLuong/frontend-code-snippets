@@ -120,3 +120,17 @@ var arr1 = [‘a’, ‘b’, ‘c’];
 var arr2 = [‘d’, ‘e’, ‘f’];
 var arr3 = arr1.concat(arr2);
 console.log(arr3); //[“a”, “b”, “c”, “d”, “e”, “f”]
+
+//--------------------------IF ELSE -------------------------
+
+var id = 1
+var id2 = 2
+//IF id equal to id2 then id = 5 else id is same
+id === id2 ? (id = 5) : id
+let visible = true;
+
+visible ? (console.log('visible is true')): null
+
+//-------------------FIND----------------------
+pet = pets.find(pet => pet.type ==='Dog' && pet.name === 'Tommy');
+console.log(pet); // { type: 'Dog', name: 'Tommy' }
