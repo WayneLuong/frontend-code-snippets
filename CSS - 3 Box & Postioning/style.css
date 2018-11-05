@@ -10,8 +10,6 @@ prevents text from spilling over to next element*/
 
 }
 
-
-
 /* Border -- border around the content 
 Margin --- margin outside border
  Padding -- betweeen border and the content 
@@ -20,6 +18,8 @@ Margin --- margin outside border
  inline
  block
  inline block - flow like inline while retaining all other features of block
+ flex
+ grid
  
  visibility: hidden or visible
  
@@ -31,16 +31,12 @@ Margin --- margin outside border
  span{
      position: fixed;
  }
-
- /* Display:
- inline
- block
- inline block  */
- /* position:
- fixed: doesnt change no matter what
- relative: flows line an inline 
- static: normal default browser setting
- absolute: element gets taken out of normal flow nothing affects it (like its not there)
+/* position:
+static default
+relative can be affected by top bottom right left properties
+fixed isnt affected by scrolling
+absolute: element gets taken out of normal flow nothing affects it (like its not there)
+sticky scroll with the viewport until a condition is met then it is fixed e.g. top:0 ie. at the top
  
  z-index: decides which appears over the other e.g. 1 or 2
  float: takes a element leftmost or rightmost (still normal flow)
@@ -61,14 +57,6 @@ Margin --- margin outside border
     background-size: 100% 100% or 100vw 100vh;
 } */
 
-/* 
-static cannot
-position: relative can be affected by top bottom right left properties
-fixed is affected and isnt affected by scrolling
-absolute is absolute to its nearest element e.g. dropdown to nav.
-sticky scroll with the viewport until a condition is met then it is fixed e.g. top:0 ie. at the top
-*/
-
 /* positioning
     padding/margin
     transform:translate
@@ -76,13 +64,26 @@ sticky scroll with the viewport until a condition is met then it is fixed e.g. t
 */
 
 /* -----------------Aligning Elements ---------------- */
+/* Note: Center aligning has no effect if the width property is not set (or set to 100%). 
+To center an image, set left and right margin to auto and make it into a block element:*/
+h1{
+    position: relative;
+    margin:auto;
+    width: 50%;
+}
+
+/* section h1 {
+    vertical align block
+    position: relative;
+    top: 50%;
+} */
 
 section{
     height: 50vh;
     background-color: red;
     text-align: center;
     /* -----------Vertical align -----------*/
-
+    /* with padding, flex, line height, position and transform */
      display: flex;
      /* vertical */
     align-items: center; /* all items */ 
@@ -93,16 +94,18 @@ section:nth-child(even){
     background-color: aquamarine;
 }
 
-section h1 {
-    /* vertical align block */
-    /* position: relative;
-    top: 50%; */
+/* --------FLEX/GRID---------- */
+.grid {
+    background-color: red;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 50vh;
 }
-section button {
 
-}
-
-section label {
-
-  
+.gridChild {
+    border: black solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
