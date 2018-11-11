@@ -1,0 +1,27 @@
+#flex {
+    display: flex;
+    flex-direction: row;
+}
+
+#box {
+    /* flex: 1:1 or 1:2 etc */
+    flex:1;
+    background-color: red;
+
+    /* enclosed in div tag */
+    display: flex;
+    height: 100vh;
+    align-items: center; /* horizontal */
+    justify-content: center;  /* vertical */
+}
+
+#box2{
+    flex:1;
+    background-color: pink;
+
+    display: flex;
+    /* flex-direction: column; */
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
