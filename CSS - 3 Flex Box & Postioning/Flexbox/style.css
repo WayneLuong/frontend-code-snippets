@@ -33,4 +33,6 @@ for equal width & height*/
 
 /* flex-wrap: wrap
 wraps the items for window resizing (responsive)
+
+flex-flow: row wrap; both wrap and direction properties
 */
