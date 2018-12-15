@@ -30,3 +30,7 @@
 /* box-sizing: border-box;  
 includes the padding in an element's total width & height
 for equal width & height*/
+
+/* flex-wrap: wrap
+wraps the items for window resizing (responsive)
+*/
