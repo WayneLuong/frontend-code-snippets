@@ -1,0 +1,227 @@
+[
+  {
+    "_id": "5b3a8910aba3ee5ee8b18449",
+    "index": 0,
+    "guid": "42ae43fe-f89a-42ee-97c2-d936aab24fd5",
+    "isActive": false,
+    "balance": "$1,301.01",
+    "picture": "http://placehold.it/32x32",
+    "age": 39,
+    "eyeColor": "green",
+    "name": "Pugh Blackwell",
+    "gender": "male",
+    "company": "GOGOL",
+    "email": "pughblackwell@gogol.com",
+    "phone": "+1 (912) 458-3471",
+    "address": "214 Plaza Street, Cliffside, American Samoa, 4125",
+    "about": "Ut fugiat sit nulla anim aliqua sunt exercitation occaecat consectetur aute quis irure aliqua quis. Fugiat ex duis quis irure velit voluptate excepteur quis et. Velit eiusmod id non eiusmod.\r\n",
+    "registered": "2017-03-22T11:01:33 -00:00",
+    "latitude": 12.177913,
+    "longitude": -125.210503,
+    "tags": [
+      "magna",
+      "nisi",
+      "qui",
+      "incididunt",
+      "anim",
+      "amet",
+      "id"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Becker Mueller"
+      },
+      {
+        "id": 1,
+        "name": "Rebekah Santana"
+      },
+      {
+        "id": 2,
+        "name": "Ratliff Soto"
+      }
+    ],
+    "greeting": "Hello, Pugh Blackwell! You have 8 unread messages.",
+    "favoriteFruit": "banana"
+  },
+  {
+    "_id": "5b3a89109a36b632cabc3428",
+    "index": 1,
+    "guid": "d22bf707-48ec-4abf-afd2-512be47a3da0",
+    "isActive": true,
+    "balance": "$2,222.15",
+    "picture": "http://placehold.it/32x32",
+    "age": 32,
+    "eyeColor": "green",
+    "name": "Casandra Schwartz",
+    "gender": "female",
+    "company": "SQUISH",
+    "email": "casandraschwartz@squish.com",
+    "phone": "+1 (810) 479-2165",
+    "address": "939 Garfield Place, Homeland, Florida, 5919",
+    "about": "Qui ea occaecat amet veniam deserunt. Proident nostrud incididunt ipsum ad irure nulla. Mollit cillum voluptate quis exercitation esse nulla deserunt dolore cupidatat quis. Aliquip veniam officia aliquip duis consequat ex ut quis. Tempor et laboris esse in pariatur do do magna culpa aute occaecat sit. Reprehenderit ex ullamco esse ipsum laborum laborum. Duis nostrud deserunt nisi aute deserunt incididunt sit veniam.\r\n",
+    "registered": "2016-01-26T12:36:19 -00:00",
+    "latitude": -66.27027,
+    "longitude": 3.434306,
+    "tags": [
+      "minim",
+      "amet",
+      "fugiat",
+      "deserunt",
+      "elit",
+      "culpa",
+      "elit"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Daisy Bradshaw"
+      },
+      {
+        "id": 1,
+        "name": "Norman Mcbride"
+      },
+      {
+        "id": 2,
+        "name": "Diann Dale"
+      }
+    ],
+    "greeting": "Hello, Casandra Schwartz! You have 9 unread messages.",
+    "favoriteFruit": "apple"
+  },
+  {
+    "_id": "5b3a8910a89e8e01017ede24",
+    "index": 2,
+    "guid": "27beffdb-6743-4cb7-9ae1-58775fa2b4f5",
+    "isActive": false,
+    "balance": "$1,855.08",
+    "picture": "http://placehold.it/32x32",
+    "age": 28,
+    "eyeColor": "blue",
+    "name": "Effie Mathews",
+    "gender": "female",
+    "company": "KENGEN",
+    "email": "effiemathews@kengen.com",
+    "phone": "+1 (863) 536-3174",
+    "address": "835 Tompkins Place, Gallina, California, 6067",
+    "about": "Laboris est commodo culpa labore mollit ullamco labore mollit velit voluptate irure laborum. Mollit sunt Lorem ea ullamco ullamco enim ex nostrud esse ex. Adipisicing excepteur ad velit veniam nostrud tempor anim deserunt minim.\r\n",
+    "registered": "2014-10-19T05:33:38 -01:00",
+    "latitude": 9.190967,
+    "longitude": -48.736639,
+    "tags": [
+      "cupidatat",
+      "laborum",
+      "qui",
+      "culpa",
+      "et",
+      "non",
+      "in"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Kirby Stark"
+      },
+      {
+        "id": 1,
+        "name": "Holden Potter"
+      },
+      {
+        "id": 2,
+        "name": "Oneil David"
+      }
+    ],
+    "greeting": "Hello, Effie Mathews! You have 2 unread messages.",
+    "favoriteFruit": "apple"
+  },
+  {
+    "_id": "5b3a8910e404247038110bf0",
+    "index": 3,
+    "guid": "e418d0f8-36e2-4e0b-a9e1-337673af192c",
+    "isActive": false,
+    "balance": "$3,996.28",
+    "picture": "http://placehold.it/32x32",
+    "age": 39,
+    "eyeColor": "blue",
+    "name": "Stacey Clayton",
+    "gender": "female",
+    "company": "NITRACYR",
+    "email": "staceyclayton@nitracyr.com",
+    "phone": "+1 (962) 554-3015",
+    "address": "876 Hinsdale Street, Marenisco, Federated States Of Micronesia, 7321",
+    "about": "Elit pariatur proident aute exercitation velit culpa. Do sit elit pariatur commodo cillum dolor. Officia occaecat ipsum nulla officia dolor anim quis. Pariatur quis sit irure exercitation est aute id nisi sunt enim cillum duis tempor. Culpa ullamco cupidatat nostrud adipisicing proident.\r\n",
+    "registered": "2015-08-20T05:07:09 -01:00",
+    "latitude": 54.092324,
+    "longitude": 79.980263,
+    "tags": [
+      "nulla",
+      "deserunt",
+      "consectetur",
+      "quis",
+      "nulla",
+      "ea",
+      "esse"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Misty Baker"
+      },
+      {
+        "id": 1,
+        "name": "Stacie Wright"
+      },
+      {
+        "id": 2,
+        "name": "Puckett Villarreal"
+      }
+    ],
+    "greeting": "Hello, Stacey Clayton! You have 6 unread messages.",
+    "favoriteFruit": "banana"
+  },
+  {
+    "_id": "5b3a89101af3ce0c4608942b",
+    "index": 4,
+    "guid": "2b278ba7-4a95-4db8-b09f-6a6512756f3e",
+    "isActive": false,
+    "balance": "$3,687.61",
+    "picture": "http://placehold.it/32x32",
+    "age": 25,
+    "eyeColor": "green",
+    "name": "Greene Michael",
+    "gender": "male",
+    "company": "CYTRAK",
+    "email": "greenemichael@cytrak.com",
+    "phone": "+1 (887) 558-3560",
+    "address": "444 Bokee Court, Nescatunga, Arizona, 3623",
+    "about": "Cillum commodo dolore laboris cupidatat dolor ex adipisicing proident aute amet in Lorem ad. Consequat ex ea do velit reprehenderit pariatur qui. Non mollit est nostrud eu minim deserunt eu mollit ea enim mollit aute sit.\r\n",
+    "registered": "2017-01-05T03:19:28 -00:00",
+    "latitude": -48.870248,
+    "longitude": 148.69927,
+    "tags": [
+      "nisi",
+      "eu",
+      "est",
+      "aute",
+      "duis",
+      "voluptate",
+      "eiusmod"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Carmela Burch"
+      },
+      {
+        "id": 1,
+        "name": "Leanne Pugh"
+      },
+      {
+        "id": 2,
+        "name": "Allie Erickson"
+      }
+    ],
+    "greeting": "Hello, Greene Michael! You have 8 unread messages.",
+    "favoriteFruit": "banana"
+  }
+]
