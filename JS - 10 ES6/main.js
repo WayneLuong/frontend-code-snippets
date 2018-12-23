@@ -1,3 +1,12 @@
+// ------------------------IMPORT/EXPORTS-----------------------
+<script type="module" src="example"></script> --type="module" allows for import/exports
+
+import { defaultExport } from "module-name"; - function
+import  defaultExport  from "module-name"; - file
+
+export default class Menu; - class
+export default {Menu}; - function
+
 // ------------------------CONST & LET-----------------------
 let name = 'John';
 let test;
