@@ -45,3 +45,5 @@ git checkout test - switch to test branch
 (add / commit branch)
 git checkout master - swtich to master branch
 git merge test - merge branch with master to push
+-------------delete branch---------
+$ git branch -d branch_name
