@@ -1,4 +1,4 @@
-mkdir - make directory
+mkdir/ touch - make directory
 cd - go to directory
 cd.. - go back 
 dir - see the files
