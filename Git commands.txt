@@ -1,4 +1,4 @@
-mkdir/ touch - make directory
+------------mkdir/ touch - make directory--------------
 cd - go to directory
 cd.. - go back 
 dir - see the files
@@ -27,14 +27,21 @@ git branch - shows the branches
 git branch -d - delete the branch name
 confirm pull request and allow merge to master on github
 
-change git acc
+-------------Change git acc---------------------
 git config --global credential.helper wincred
 go on windows creditials manager delete key
 then relogin
 
-.gitignore file (ignore any folders in it e.g. node_modules)
+----------------.gitignore file (ignore any folders in it e.g. node_modules)-----
 test.txt - file
 /dir1 - folder
 *.txt - all txt files
 
 gh-pages deploy
+
+------------git branch-------------------
+git branch test - create branch called test
+git checkout test - switch to test branch
+(add / commit branch)
+git checkout master - swtich to master branch
+git merge test - merge branch with master to push
