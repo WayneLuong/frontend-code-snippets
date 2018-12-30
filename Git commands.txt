@@ -33,4 +33,8 @@ go on windows creditials manager delete key
 then relogin
 
 .gitignore file (ignore any folders in it e.g. node_modules)
+test.txt - file
+/dir1 - folder
+*.txt - all txt files
+
 gh-pages deploy
