@@ -20,6 +20,8 @@ git checkout master- switches branches or master
 git checkout -b <branchname> - creates new branch 
 git push --set-upstream origin new-ideas - pushes a new branch to repo
 
+git add . && git commit -m'test' && git push
+
 git ls-files - views the files
 git status - shows the status
 git log - shows the commit history
