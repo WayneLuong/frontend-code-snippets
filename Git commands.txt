@@ -89,6 +89,10 @@ Host github.com-work_user1
    User git
    IdentityFile ~/.ssh/id_rsa_personal
    
+PUSHING FILES (gitaddname changed to same as config file unless default):
+git remote add origin git@github.com:gitaccname/my-new-project.git
+git push -u -f origin master 
+
 CHECK SSH KEYS:
 cd ~/.ssh
 ls
