@@ -3,6 +3,7 @@ cd - go to directory
 cd.. - go back 
 dir - see the files
 . - selects all
+:wq - exit commit editor
 
 git init - new repo
 git clone - clone repo
@@ -127,6 +128,9 @@ git reflog - check commit history including resets
 GET THE HASH FOR THE RESET
 git checkout sd21441 the hash (this will be a detached head)
 git branch backup (create a new branch which will serve as backup, reverted will be at backup branch)
+OPTIONAL MERGE BACK INTO BRANCH
+git checkout master
+git merge feature-branch-name
 
 REVERT A COMMIT (revert this hash)
 git revert sd21314
