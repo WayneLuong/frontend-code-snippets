@@ -97,3 +97,6 @@ CHECK SSH KEYS:
 cd ~/.ssh
 ls
 ls -la
+
+DELETE SSH:
+rm -f ~/.ssh/id_rsa
