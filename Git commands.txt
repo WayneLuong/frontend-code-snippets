@@ -70,4 +70,26 @@ view key (where id_rsa is key name - can be changed):
 cat ~/.ssh/id_rsa.pub
 PASTE KEY TO GIT PAGE
 
-
+----------Set up Multiple SSH accs------------
+RENAME THE DEFAULT PATH
+Enter file in which to save the key (/Users/name/.ssh/id_rsa): /Users/name/.ssh/id_rsa_personal
+ssh-add ~/.ssh/id_rsa_personal
+CREAT CONFIG FILE
+touch config
+PASTE INTO IT: 
+# Main account, - the default config
+Host github.com
+   HostName github.com
+   User git
+   IdentityFile ~/.ssh/id_rsa
+   
+# Personal account-1
+Host github.com-work_user1    
+   HostName github.com
+   User git
+   IdentityFile ~/.ssh/id_rsa_personal
+   
+CHECK SSH KEYS:
+cd ~/.ssh
+ls
+ls -la
