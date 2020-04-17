@@ -100,3 +100,34 @@ ls -la
 
 DELETE SSH:
 rm -f ~/.ssh/id_rsa
+
+----------Fixing bad commits------------ (commit hash)
+FIX LAST COMMIT MESSAGE:
+git commit --amend -m 'new message'
+
+COMMIT TO DIFFERENT BRANCH:
+git log (to get the hash)
+git checkout example.js or git checkout sc34214 or git checkout branchname - (to correct branch)
+git cherry-pick sda23141 - paste the correct hash from other branch
+
+DELETE THE WRONG COMMIT (RESET TO A HASH)
+git checkout example.js or git checkout sc34214 or git checkout branchname - (to correct branch)
+git reset --mixed sd341513 or git reset sd213124 - default only in the local directory
+git reset --soft sd341513  - resetted files are still committed
+git reset --hard sd341513  - resetted files completely reverted
+
+REMOVE UNTRACKED FILES
+git clean -df - gets rid of any untracked files/directories
+
+----------Fixing bad commits reverts------------
+
+REVERT RESETS
+git reflog - check commit history including resets 
+
+GET THE HASH FOR THE RESET
+git checkout sd21441 the hash (this will be a detached head)
+git branch backup (create a new branch which will serve as backup, reverted will be at backup branch)
+
+REVERT A COMMIT (revert this hash)
+git revert sd21314
+
