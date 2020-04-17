@@ -21,6 +21,7 @@ git checkout -b <branchname> - creates new branch
 git push --set-upstream origin new-ideas - pushes a new branch to repo
 
 git add . && git commit -m'test' && git push
+git commit -am 'test' && git push
 
 git ls-files - views the files
 git status - shows the status
@@ -61,3 +62,12 @@ git push -u origin master
 ----------Push an existing repository from the command line------------
 git remote add origin https://github.com/WayneLuong/slate-skeleton-theme.git
 git push -u origin master
+
+----------Set up SSH------------
+create SSH:
+ssh-keygen -t rsa -C "admin@example.com"
+view key (where id_rsa is key name - can be changed):
+cat ~/.ssh/id_rsa.pub
+PASTE KEY TO GIT PAGE
+
+
