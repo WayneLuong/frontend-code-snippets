@@ -36,6 +36,10 @@ git config --global credential.helper wincred
 go on windows creditials manager delete key
 then relogin
 
+-------------Change git acc when pushing---------------------
+git config --global user.name "Bob"
+git config --global user.email "Bob@example.com"
+
 ----------------.gitignore file (ignore any folders in it e.g. node_modules)-----
 test.txt - file
 /dir1 - folder
