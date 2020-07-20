@@ -14,6 +14,15 @@ async function asyncCall() {
     // expected output: "resolved"
 }
 
+//http request
+/* async function asyncCall() {
+    console.log('calling');
+    const response = await axios.get('https://json.com/users'); //Wait until promise is resolve before log
+    console.log(response.data);
+    console.log('end');
+    // expected output: "json data"
+} */
+
 asyncCall();
 
 //Thenable promise
