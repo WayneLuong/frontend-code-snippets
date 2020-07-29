@@ -148,4 +148,5 @@ git push --set-upstream origin dev
 git checkout master
 git merge dev
 git push
-git branch -d dev DELETED BRANCH
+git branch -d dev DELETE LOCAL BRANCH
+git push origin --delete dev DELETE REMOTE BRANCH
