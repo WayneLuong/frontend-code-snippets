@@ -139,3 +139,13 @@ git merge feature-branch-name
 REVERT A COMMIT (revert this hash)
 git revert sd21314
 
+----------Work flow------------
+
+git branch dev
+git checkout dev
+git add . && git commit -m 'hotfix
+git push --set-upstream origin dev
+git checkout master
+git merge dev
+git push
+git branch -d dev DELETED BRANCH
