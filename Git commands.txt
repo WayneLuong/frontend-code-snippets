@@ -150,3 +150,11 @@ git merge dev
 git push
 git branch -d dev DELETE LOCAL BRANCH
 git push origin --delete dev DELETE REMOTE BRANCH
+git pull origin master PULL MASTER CHANGES
+
+----------merge messages -----------
+press "i" (i for insert)
+write your merge message
+press "esc" (escape)
+write ":wq" (write & quit)
+then press enter
